@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcanist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body class="build-page">
+
+    <!-- ==========================
+         Navigation Bar
+    =========================== -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="main.html">
+                Rutaus and Kartiv ESO Helper
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../main.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Builds
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="arcanist.html">
+                                    Arcanist
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Sorcerer
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Nightblade
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            To-Do
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Pots and Foods Crafter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ==========================
+         Build Header Section
+        =========================== -->
+
+        <section class="container py-5 text-light">
+            <div class="text-center mb-5 mt-5">
+                <h1 class="build-title">Arcanist</h1>
+                <p class="build-subtitle">
+                    My Arcanist build for The Elder Scrolls Online.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==========================
+         Build Overview Section
+        =========================== -->
+
+        <section class="container my-3">
+            <div class="text-center text-light mb-4">
+                <h2 class="section-title">Build Overview</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light build-card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Role</h3>
+                            <p class="card-text">
+                                Damage Dealer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light build-card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Content</h3>
+                            <p class="card-text">
+                                PvE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light build-card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Subclassing</h3>
+                            <p class="card-text">
+                                Have subclassing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================
+         Build Details Section
+        =========================== -->
+
+
+        <!-- Stamina / Magicka Section -->
+        <section class="build-resource">
+            <h4>
+                This build is set up as a
+                <span class="stamina-text">Stamina</span>
+                based damage dealer.
+            </h4>
+        </section>
+
+        <!-- Champion Points Section -->
+        <section class="container text-light text-center mb-5">
+            <h3>Champion Points</h3>
+            <div class="table-responsive mt-4">
+                <table class="table table-dark table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="cp-craft">Craft:</th>
+                            <th class="cp-warfare">Warfare:</th>
+                            <th class="cp-fitness">Fitness:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cp-craft">Steed's Blessing</td>
+                            <td class="cp-warfare">Biting Aura</td>
+                            <td class="cp-fitness">Bastion</td>
+                        </tr>
+                        <tr>
+                            <td class="cp-craft">Gifted Rider</td>
+                            <td class="cp-warfare">Exploiter</td>
+                            <td class="cp-fitness">Bloody Renewal</td>
+                        </tr>
+                        <tr>
+                            <td class="cp-craft">War Mount</td>
+                            <td class="cp-warfare">Master-at-Arms</td>
+                            <td class="cp-fitness">Boundless Vitality</td>
+                        </tr>
+                        <tr>
+                            <td class="cp-craft"></td>
+                            <td class="cp-warfare">Wrathful Strikes</td>
+                            <td class="cp-fitness">Fortified</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--Sets Section -->
+        <section class="container text-light text-center mb-5">
+            <h3>Set Items</h3>
+            <table class="table table-dark table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Part</th>
+                        <th>Set</th>
+                        <th>Weight</th>
+                        <th>Trait</th>
+                        <th>Enchantment</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- Gear -->
+                    <tr>
+                        <td>Gear</td>
+                        <td>Head</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/slimecraw" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Slimecraw
+                                <span class="tooltip-info">
+                                    <strong>Slimecraw</strong>
+                                    <br><br>
+                                    (1 item) Adds 657 Critical Chance <br>
+                                    (2 items) Adds 113 Critical Chance, Gain Minor Berserk at all times, increasing
+                                    your damage done by 5%.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Light</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/armor/divines" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Divines
+                                <span class="tooltip-info">
+                                    <strong>Divines</strong>
+                                    <br><br>
+                                    Increases the effect of Mundus Stones.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-stamina"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Stamina
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Stamina</strong>
+                                    <br><br>
+                                    Adds Maximum Stamina.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gear</td>
+                        <td>Shoulders</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/perfected-slivers-of-the-null-arca"
+                                class="info-tooltip" target="_blank" rel="noopener noreferrer">Null Arca
+                                <span class="tooltip-info">
+                                    <strong>Perfected Silvers of the Null Arca</strong>
+                                    <br><br>
+                                    (2 items) Adds 657 Critical Chance <br>
+                                    (3 items) Gain Minor Slayer at all times, increasing your damage done to
+                                    Dungeon, Trial, and Arena Monsters by 5%. <br>
+                                    (4 items) Adds 657 Critical Chance <br>
+                                    (5 perfected items) Adds 129 Weapon and Spell Damage <br>
+                                    (5 items) Dealing Critical Damage gives you a stack of Sliver for 10 seconds, up
+                                    to once every 0.5 seconds. Upon gaining your third stack, they merge into a
+                                    crystal that launches at the last enemy you damaged, dealing 1953 Physical
+                                    Damage. This effect scales off the higher of your Weapon or Spell Damage, and
+                                    you cannot gain Sliver for 4 seconds after the crystal is launched.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Medium</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/armor/divines" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Divines
+                                <span class="tooltip-info">
+                                    <strong>Divines</strong>
+                                    <br><br>
+                                    Increases the effect of Mundus Stones.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-stamina"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Stamina
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Stamina</strong>
+                                    <br><br>
+                                    Adds Maximum Stamina.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gear</td>
+                        <td>Chest</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/tide-born-wildstalker" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Tide-Born
+                                <span class="tooltip-info">
+                                    <strong>Tide-Born Wildstalker</strong>
+                                    <br><br>
+                                    (2 items) Adds 129 Weapon and Spell Damage <br>
+                                    (3 items) Adds 657 Critical Chance <br>
+                                    (4 items) Adds 1487 Offensive Penetration <br>
+                                    (5 items) Increase your direct damage done to monsters by 15%.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Medium</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/armor/divines" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Divines
+                                <span class="tooltip-info">
+                                    <strong>Divines</strong>
+                                    <br><br>
+                                    Increases the effect of Mundus Stones.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-stamina"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Stamina
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Stamina</strong>
+                                    <br><br>
+                                    Adds Maximum Stamina.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gear</td>
+                        <td>Hands</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/tide-born-wildstalker" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Tide-Born
+                                <span class="tooltip-info">
+                                    <strong>Tide-Born Wildstalker</strong>
+                                    <br><br>
+                                    (2 items) Adds 129 Weapon and Spell Damage <br>
+                                    (3 items) Adds 657 Critical Chance <br>
+                                    (4 items) Adds 1487 Offensive Penetration <br>
+                                    (5 items) Increase your direct damage done to monsters by 15%.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Medium</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/armor/divines" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Divines
+                                <span class="tooltip-info">
+                                    <strong>Divines</strong>
+                                    <br><br>
+                                    Increases the effect of Mundus Stones.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-stamina"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Stamina
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Stamina</strong>
+                                    <br><br>
+                                    Adds Maximum Stamina.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gear</td>
+                        <td>Waist</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/tide-born-wildstalker" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Tide-Born
+                                <span class="tooltip-info">
+                                    <strong>Tide-Born Wildstalker</strong>
+                                    <br><br>
+                                    (2 items) Adds 129 Weapon and Spell Damage <br>
+                                    (3 items) Adds 657 Critical Chance <br>
+                                    (4 items) Adds 1487 Offensive Penetration <br>
+                                    (5 items) Increase your direct damage done to monsters by 15%.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Medium</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/armor/divines" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Divines
+                                <span class="tooltip-info">
+                                    <strong>Divines</strong>
+                                    <br><br>
+                                    Increases the effect of Mundus Stones.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-stamina"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Stamina
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Stamina</strong>
+                                    <br><br>
+                                    Adds Maximum Stamina.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gear</td>
+                        <td>Legs</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/tide-born-wildstalker" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Tide-Born
+                                <span class="tooltip-info">
+                                    <strong>Tide-Born Wildstalker</strong>
+                                    <br><br>
+                                    (2 items) Adds 129 Weapon and Spell Damage <br>
+                                    (3 items) Adds 657 Critical Chance <br>
+                                    (4 items) Adds 1487 Offensive Penetration <br>
+                                    (5 items) Increase your direct damage done to monsters by 15%.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Medium</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/armor/divines" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Divines
+                                <span class="tooltip-info">
+                                    <strong>Divines</strong>
+                                    <br><br>
+                                    Increases the effect of Mundus Stones.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-stamina"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Stamina
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Stamina</strong>
+                                    <br><br>
+                                    Adds Maximum Stamina.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gear</td>
+                        <td>Feet</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/tide-born-wildstalker" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Tide-Born
+                                <span class="tooltip-info">
+                                    <strong>Tide-Born Wildstalker</strong>
+                                    <br><br>
+                                    (2 items) Adds 129 Weapon and Spell Damage <br>
+                                    (3 items) Adds 657 Critical Chance <br>
+                                    (4 items) Adds 1487 Offensive Penetration <br>
+                                    (5 items) Increase your direct damage done to monsters by 15%.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Medium</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/armor/divines" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Divines
+                                <span class="tooltip-info">
+                                    <strong>Divines</strong>
+                                    <br><br>
+                                    Increases the effect of Mundus Stones.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-stamina"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Stamina
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Stamina</strong>
+                                    <br><br>
+                                    Adds Maximum Stamina.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-- Jewelry -->
+                    <tr>
+                        <td>Jewelry</td>
+                        <td>Necklace</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/velothi-ur-mages-amulet" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Velothi Ur-Mage's
+                                Amulet
+                                <span class="tooltip-info">
+                                    <strong>Velothi Ur-Mage's Amulet</strong>
+                                    <br><br>
+                                    (1 item) Adds 1650 Offensive Penetration, Increase your damage done to monsters
+                                    by 15%, gain Minor Force at all times, increasing your Critical Damage done by
+                                    10%, and reduce your Light and Heavy Attack damage by 99%.
+                                </span>
+                            </a>
+                        </td>
+                        <td>(Mythic)</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/jewelry/bloodthirsty" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Bloodthirsty
+                                <span class="tooltip-info">
+                                    <strong>Bloodthirsty</strong>
+                                    <br><br>
+                                    Increases your Weapon and Spell Damage against enemies under 90% Health.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-increase-physical-harm"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Increase Physical Harm
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Increase Physical Harm</strong>
+                                    <br><br>
+                                    Adds Weapon and Spell Damage. <br>
+                                    Adds Stamina Recovery.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jewelry</td>
+                        <td>Ring 1</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/perfected-slivers-of-the-null-arca"
+                                class="info-tooltip" target="_blank" rel="noopener noreferrer">Null Arca
+                                <span class="tooltip-info">
+                                    <strong>Perfected Silvers of the Null Arca</strong>
+                                    <br><br>
+                                    (2 items) Adds 657 Critical Chance <br>
+                                    (3 items) Gain Minor Slayer at all times, increasing your damage done to
+                                    Dungeon, Trial, and Arena Monsters by 5%. <br>
+                                    (4 items) Adds 657 Critical Chance <br>
+                                    (5 perfected items) Adds 129 Weapon and Spell Damage <br>
+                                    (5 items) Dealing Critical Damage gives you a stack of Sliver for 10 seconds, up
+                                    to once every 0.5 seconds. Upon gaining your third stack, they merge into a
+                                    crystal that launches at the last enemy you damaged, dealing 1953 Physical
+                                    Damage. This effect scales off the higher of your Weapon or Spell Damage, and
+                                    you cannot gain Sliver for 4 seconds after the crystal is launched.
+                                </span>
+                            </a>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/jewelry/bloodthirsty" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Bloodthirsty
+                                <span class="tooltip-info">
+                                    <strong>Bloodthirsty</strong>
+                                    <br><br>
+                                    Increases your Weapon and Spell Damage against enemies under 90% Health.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-increase-physical-harm"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Increase Physical Harm
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Increase Physical Harm</strong>
+                                    <br><br>
+                                    Adds Weapon and Spell Damage. <br>
+                                    Adds Stamina Recovery.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jewelry</td>
+                        <td>Ring 2</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/perfected-slivers-of-the-null-arca"
+                                class="info-tooltip" target="_blank" rel="noopener noreferrer">Null Arca
+                                <span class="tooltip-info">
+                                    <strong>Perfected Silvers of the Null Arca</strong>
+                                    <br><br>
+                                    (2 items) Adds 657 Critical Chance <br>
+                                    (3 items) Gain Minor Slayer at all times, increasing your damage done to
+                                    Dungeon, Trial, and Arena Monsters by 5%. <br>
+                                    (4 items) Adds 657 Critical Chance <br>
+                                    (5 perfected items) Adds 129 Weapon and Spell Damage <br>
+                                    (5 items) Dealing Critical Damage gives you a stack of Sliver for 10 seconds, up
+                                    to once every 0.5 seconds. Upon gaining your third stack, they merge into a
+                                    crystal that launches at the last enemy you damaged, dealing 1953 Physical
+                                    Damage. This effect scales off the higher of your Weapon or Spell Damage, and
+                                    you cannot gain Sliver for 4 seconds after the crystal is launched.
+                                </span>
+                            </a>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/jewelry/bloodthirsty" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Bloodthirsty
+                                <span class="tooltip-info">
+                                    <strong>Bloodthirsty</strong>
+                                    <br><br>
+                                    Increases your Weapon and Spell Damage against enemies under 90% Health.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-increase-physical-harm"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Increase Physical Harm
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Increase Physical Harm</strong>
+                                    <br><br>
+                                    Adds Weapon and Spell Damage. <br>
+                                    Adds Stamina Recovery.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-- Weapons -->
+                    <tr>
+                        <td>Weapon</td>
+                        <td>Front 1</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/perfected-slivers-of-the-null-arca"
+                                class="info-tooltip" target="_blank" rel="noopener noreferrer">Null Arca Dagger
+                                <span class="tooltip-info">
+                                    <strong>Perfected Silvers of the Null Arca</strong>
+                                    <br><br>
+                                    (2 items) Adds 657 Critical Chance <br>
+                                    (3 items) Gain Minor Slayer at all times, increasing your damage done to
+                                    Dungeon, Trial, and Arena Monsters by 5%. <br>
+                                    (4 items) Adds 657 Critical Chance <br>
+                                    (5 perfected items) Adds 129 Weapon and Spell Damage <br>
+                                    (5 items) Dealing Critical Damage gives you a stack of Sliver for 10 seconds, up
+                                    to once every 0.5 seconds. Upon gaining your third stack, they merge into a
+                                    crystal that launches at the last enemy you damaged, dealing 1953 Physical
+                                    Damage. This effect scales off the higher of your Weapon or Spell Damage, and
+                                    you cannot gain Sliver for 4 seconds after the crystal is launched.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Primary</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/weapon/charged" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Charged
+                                <span class="tooltip-info">
+                                    <strong>Charged</strong>
+                                    <br><br>
+                                    Increases chance to apply status effects.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-flame"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">Flame
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Flame</strong>
+                                    <br><br>
+                                    Deals fire damage.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Weapon</td>
+                        <td>Front 2</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/perfected-slivers-of-the-null-arca"
+                                class="info-tooltip" target="_blank" rel="noopener noreferrer">Null Arca Dagger
+                                <span class="tooltip-info">
+                                    <strong>Perfected Silvers of the Null Arca</strong>
+                                    <br><br>
+                                    (2 items) Adds 657 Critical Chance <br>
+                                    (3 items) Gain Minor Slayer at all times, increasing your damage done to
+                                    Dungeon, Trial, and Arena Monsters by 5%. <br>
+                                    (4 items) Adds 657 Critical Chance <br>
+                                    (5 perfected items) Adds 129 Weapon and Spell Damage <br>
+                                    (5 items) Dealing Critical Damage gives you a stack of Sliver for 10 seconds, up
+                                    to once every 0.5 seconds. Upon gaining your third stack, they merge into a
+                                    crystal that launches at the last enemy you damaged, dealing 1953 Physical
+                                    Damage. This effect scales off the higher of your Weapon or Spell Damage, and
+                                    you cannot gain Sliver for 4 seconds after the crystal is launched.
+                                </span>
+                            </a>
+                        </td>
+                        <td>Secondary</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/weapon/charged" class="info-tooltip" target="_blank"
+                                rel="noopener noreferrer">Charged
+                                <span class="tooltip-info">
+                                    <strong>Charged</strong>
+                                    <br><br>
+                                    Increases chance to apply status effects.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-poison"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Poison
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Poison</strong>
+                                    <br><br>
+                                    Deals posion damage.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Weapon</td>
+                        <td>Back</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/sets/perfected-merciless-charge" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Perfected Merciless Charge
+                                <span class="tooltip-info">
+                                    <strong>Perfected Merciless Charge</strong>
+                                    <br><br>
+                                    (2 perfected items) Adds 1190 Offensive Penetration <br>
+                                    (2 items) Activating Critical Charge stirs up a barbarous lust for battle within
+                                    you for 18 seconds, increasing your damage done with direct damage attacks by
+                                    2%, up to a maximum of 12%. This effect scales off the higher of your Weapon or
+                                    Spell Damage.
+                                </span>
+                            </a>
+                        </td>
+                        <td>2H Greatsword</td>
+                        <td>
+                            <a href="https://eso-hub.com/en/traits/weapon/infused-2" class="info-tooltip"
+                                target="_blank" rel="noopener noreferrer">Infused
+                                <span class="tooltip-info">
+                                    <strong>Infused</strong>
+                                    <br><br>
+                                    Increases weapon enchantment effect and reduces enchantment cooldown.
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/enchanting-runes-and-glyphs/glyph/glyph-of-weapon-damage"
+                                class="info-tooltip info-tooltip-left" target="_blank" rel="noopener noreferrer">
+                                Weapon Damage
+                                <span class="tooltip-info">
+                                    <strong>Glyph of Weapon Damage</strong>
+                                    <br><br>
+                                    Increases your Weapon Damage and Spell Damage for 5 seconds.
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="container text-light text-center mb-5">
+            <h3>Skills</h3>
+            <table class="table table-dark table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th>Front Bar</th>
+                        <th>Back Bar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/pragmatic-fatecarver"
+                                target="_blank" rel="noopener noreferrer">
+                                Pragmatic Fatecarver
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/fulminating-rune"
+                                target="_blank" rel="noopener noreferrer">
+                                Fulminating Rune
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/cephaliarchs-flail"
+                                target="_blank" rel="noopener noreferrer">
+                                Cephaliarch's Flail
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/templar/dawns-wrath/solar-barrage" target="_blank"
+                                rel="noopener noreferrer">
+                                Solar Barrage
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/weapon/dual-wield/quick-cloak" target="_blank"
+                                rel="noopener noreferrer">
+                                Quick Cloak
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/weapon/two-handed/stampede" target="_blank"
+                                rel="noopener noreferrer">
+                                Stampede
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/templar/dawns-wrath/radiant-glory" target="_blank"
+                                rel="noopener noreferrer">
+                                Radiant Glory
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/inspired-scholarship"
+                                target="_blank" rel="noopener noreferrer">
+                                Inspired Scholarship
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/nightblade/assassination/relentless-focus"
+                                target="_blank" rel="noopener noreferrer">
+                                Relentless Focus
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/alliance-war/assault/resolving-vigor" target="_blank"
+                                rel="noopener noreferrer">
+                                Resolving Vigor
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/nightblade/assassination/soul-harvest"
+                                target="_blank" rel="noopener noreferrer">
+                                Soul Harvest
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/the-languid-eye"
+                                target="_blank" rel="noopener noreferrer">
+                                The Languid Eye
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- ==========================
+     Footer Section
+    =========================== -->
+
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <a href="#" class="text-light text-decoration-none mx-2">
+                About Us
+            </a>
+            <span>•</span>
+            <a href="#" class="text-light text-decoration-none mx-2">
+                Contact Us
+            </a>
+            <span>•</span>
+            <a href="#" class="text-light text-decoration-none mx-2">
+                Our Addons
+            </a>
+            <span>•</span>
+            <a href="#" class="text-light text-decoration-none mx-2">
+                Tavern News
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
