@@ -11,7 +11,7 @@ A small Elder Scrolls Online helper website created by Rutaus and Kartiv.
 Always make sure you are working from the latest version of the `main` branch.
 
 
-switch to main, then pull the latest version of the main branch.
+## switch to main, then pull the latest version of the main branch with:
 ```bash
 git switch main
 git pull
@@ -19,6 +19,8 @@ git pull
 
 ## Create a new branch for whatever you work on.
 Use "git switch -c" and then name the new branch for whatever you are working on.
+
+
 for example: git switch -c To-Do
 ```bash
 git switch -c new-branch
@@ -35,6 +37,8 @@ git commit -m "Whatever i changed"
 git push -u origin new-branch
 ```
 for example: git push -u origin To-Do
+
+
 since we first called our new branch "To-Do" this is the way we will push it
 
 ## Note that: the branch name you use when creating the branch and pushing it should be the same.
@@ -45,7 +49,8 @@ since we first called our new branch "To-Do" this is the way we will push it
 ```bash
 git status
 ```
-## this tells you:
+this tells you:
+
 
 1. Which branch you are currently on
 2. Whether you have unsaved/uncommitted changes
