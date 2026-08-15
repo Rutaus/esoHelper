@@ -31,6 +31,8 @@ git switch -c new-branch
 git add .
 git commit -m "Whatever i changed"
 ```
+for exempler: git commit -m "Added gear farming"
+
 
 ## Then create a pull request (PR) with:
 ```bash
