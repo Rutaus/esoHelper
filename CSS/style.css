@@ -31,9 +31,20 @@
     background-color: #121212;
 }
 
+.link {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
 .table a {
     color: #f0f0f0;
     text-decoration: none;
+}
+
+.table img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
 }
 
 .build-title {
