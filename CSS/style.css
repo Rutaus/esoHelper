@@ -123,3 +123,108 @@
 .magicka-text {
     color: blue;
 } */
+
+
+/* ==========================================
+   Pots and Foods Crafter :
+========================================== */
+
+.crafter-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+}
+
+.crafter-page main {
+    flex: 1;
+    min-height: 1200px;
+}
+
+.crafter-category {
+    min-width: 140px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
+.crafter-header h1 {
+    font-family: "Cinzel", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #d6b36a;
+}
+
+.crafter-selection h2,
+.recipe-result h2 {
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+    color: #b68f3adc;
+}
+
+.recipe-result h3 {
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    color: #c9b58a;
+}
+
+#food-section,
+#drink-section,
+#potion-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.food-recipe {
+    min-width: 220px;
+    padding: 10px 20px;
+}
+
+.recipe-result {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 25px;
+    background-color: #1a1a1a;
+    border: 1px solid #8a6d3b;
+    border-radius: 8px;
+}
+
+.recipe-result h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.recipe-result p {
+    font-size: 1rem;
+}
+
+.artaeum-button {
+    color: white;
+    border-color: white;
+    background: linear-gradient(to right, red, blue);
+}
+
+.crafter-header {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.crafter-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.crafter-header p {
+    font-size: 1.1rem;
+}
+
+.crafter-selection {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.crafter-selection h2 {
+    margin-bottom: 35px;
+}

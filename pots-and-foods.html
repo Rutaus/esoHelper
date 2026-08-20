@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pots and Foods Crafter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body class="crafter-page">
+
+    <!-- ==========================
+         Navigation Bar
+    =========================== -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <div class="navbar-brand">
+                Rutaus and Kartiv ESO Helper
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Builds
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./builds/arcanist.html">
+                                    Arcanist
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Sorcerer
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Nightblade
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            To-Do
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pots-and-foods.html">
+                            Pots and Foods Crafter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ==========================
+         Pots and Foods Crafter Header
+        =========================== -->
+
+        <section class="container py-5 text-light">
+            <div class="text-center crafter-header">
+                <h1>Pots and Foods Crafter</h1>
+                <p>
+                    Choose what you want to craft, and we'll show you the ingredients you need.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==========================
+         Crafting Category Section
+        =========================== -->
+
+        <section class="crafter-selection container text-center text-light mb-5">
+            <h2 class="mb-4">
+                What would you like to craft?
+            </h2>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button id="food-button" class="btn btn-outline-light crafter-category">
+                    Food
+                </button>
+                <button id="drink-button" class="btn btn-outline-light crafter-category">
+                    Drink
+                </button>
+                <button id="potion-button" class="btn btn-outline-light crafter-category">
+                    Potion
+                </button>
+            </div>
+        </section>
+
+        <!-- ==========================
+         Food Selection Section
+        =========================== -->
+
+        <section id="food-section" class="container text-center text-light mb-5 d-none">
+            <h2 class="mb-4">
+                Choose a food
+            </h2>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button id="lava-foot-button" class="btn btn-outline-success food-recipe">
+                    Lava Foot Soup-and-Saltrice
+                </button>
+                <button id="jewels-button" class="btn btn-outline-secondary food-recipe">
+                    Jewels of Misrule
+                </button>
+                <button id="artaeum-button" class="btn btn-outline-danger food-recipe">
+                    Artaeum Pickled Fish Bowl
+                </button>
+                <button id="sugar-skulls-button" class="btn btn-outline-warning food-recipe">
+                    Bewitched Sugar Skulls
+                </button>
+            </div>
+        </section>
+
+        <!-- ==========================
+         Recipe Result Section
+        =========================== -->
+
+        <!-- Lava Foot Soup-and-Saltrice Result -->
+        <section id="recipe-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2 id="recipe-name">
+                Lava Foot Soup-and-Saltrice
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Increase Max stam + Stam recovery
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Flour(1) + Potato(1) + Saltrice(1) + Scrib Jelly(1)
+            </p>
+        </section>
+
+        <!-- Jewels of Misrule Result -->
+        <section id="jewels-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Jewels of Misrule
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Inscrease Stam & Mag recovery + Max Health
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Bervez Juice(1) + Lotus(1) + Mint(1) + Rose(1) + Columbine(1)
+            </p>
+        </section>
+
+        <!-- Artaeum Pickled Fish Bowl Result -->
+        <section id="artaeum-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Artaeum Pickled Fish Bowl
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Increase Max Health + Max Mag + Chance of catching higher quality fish.
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Clam Gall(3) + Fish(5) + Honey(3) + Rice(3)
+            </p>
+        </section>
+
+        <!-- Bewitched Sugar Skulls Result -->
+        <section id="sugar-skulls-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Bewitched Sugar Skulls
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Increase Max Health + Max Stam & Mag + Health recovery
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Bervez Juice(2) + Flour(5) + Honey(5) + Scrib Jelly(2) + Columbine(2)
+            </p>
+        </section>
+
+        <!-- ==========================
+         Drink Selection Section
+        =========================== -->
+
+        <section id="drink-section" class="container text-center text-light mb-5 d-none">
+            <h2 class="mb-4">
+                Choose a drink
+            </h2>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button id="ghastly-button" class="btn btn-outline-primary drink-recipe">
+                    Ghastly Eye Bowl
+                </button>
+                <button id="dubious-button" class="btn btn-outline-success drink-recipe">
+                    Dubious Camoran Throne
+                </button>
+                <button id="witchmother-button" class="btn btn-outline-primary drink-recipe">
+                    Witchmother's Potent Brew
+                </button>
+            </div>
+        </section>
+
+        <!-- ==========================
+         Recipe Result Section
+        =========================== -->
+
+        <!-- Gastly Eye Bowl -->
+        <section id="ghastly-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2 id="recipe-name">
+                Gastly Eye Bowl
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Increase Max Mag + Mag recovery
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Bananas(1) + Fleshfly Larva(1) + Rose(1) + Saltwater Bait/Worms(1)
+            </p>
+        </section>
+
+        <!-- Dubious Camoran Throne -->
+        <section id="dubious-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Dubious Camoran Throne
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Increase Stam recovery + Max Stam + Max Health
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Beetle Scuttle(3) + Lake Bait/Guts(1) + River Bait/Insect Parts(1) + White Meat(1)
+            </p>
+        </section>
+
+        <!-- Witchmother's Potent Brew Result -->
+        <section id="witchmother-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Witchmother's Potent Brew
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Increase Max Mag + Max Health + Mag recovery
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Bervez Juice(1) + Nightshade(1) + Rice(1) + Small Game(1)
+            </p>
+        </section>
+
+        <!-- ==========================
+         Potion Selection Section
+        =========================== -->
+
+        <section id="potion-section" class="container text-center text-light mb-5 d-none">
+            <h2 class="mb-4">
+                Choose a potion
+            </h2>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button id="essence-health-button" class="btn btn-outline-danger potion-recipe">
+                    Essence of Health
+                </button>
+                <button id="essence-weapon-power-button" class="btn btn-outline-success potion-recipe">
+                    Essence of Weapon Power
+                </button>
+                <button id="essence-spell-power-button" class="btn btn-outline-info potion-recipe">
+                    Essence of Spell Power
+                </button>
+                <button id="essence-health-2-button" class="btn btn-outline-danger potion-recipe">
+                    Essence Health
+                </button>
+                <button id="essence-immovability-button" class="btn btn-outline-warning potion-recipe">
+                    Essence Immovability
+                </button>
+            </div>
+        </section>
+
+        <!-- ==========================
+         Potion Result Sections
+        =========================== -->
+
+        <!-- Essence of Health -->
+        <section id="essence-health-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Essence of Health \ "Tri-pots"
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Restore HP & Mag & Stam immediately
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Bugloss + Columbine + Dragonthorn
+            </p>
+        </section>
+
+        <!-- Essence of Weapon Power -->
+        <section id="essence-weapon-power-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Essence of Weapon Power
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Increase your Weapon Damage + gives weapon and critical rating + restore stam + stam recovery
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Blessed Thistle + Dragonthorn + Water Hyacinth / Warmwood
+            </p>
+        </section>
+
+        <!-- Essence of Spell Power -->
+        <section id="essence-spell-power-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Essence of Spell Power
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                increase spell damage + gives spell critical rating + resore magicka + mag recovery
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Corn Flower + Lady's Smock + Namira's Rot
+            </p>
+        </section>
+
+        <!-- Essence Health -->
+        <section id="essence-health-2-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Essence Health
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Restore Health + inscrease HP recovery + increase spell and physical resistances
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Bugloss + Mountain Flower + Mudcrub chitin
+            </p>
+        </section>
+
+        <!-- Essence Immovability -->
+        <section id="essence-immovability-result" class="container text-center text-light mb-5 d-none recipe-result">
+            <h2>
+                Essence Immovability
+            </h2>
+            <h3 class="mt-4">
+                Effects:
+            </h3>
+            <p>
+                Immune to knockback & disabling effects + increase your movement speed + restore stam + stam recovery
+            </p>
+            <h3 class="mt-4">
+                Ingredients Needed:
+            </h3>
+            <p>
+                Blessed Thistle + Columbine + Namira's Rot
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ==========================
+     Footer Section
+    =========================== -->
+
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <a href="#" class="text-light text-decoration-none mx-2">
+                About Us
+            </a>
+            <span>•</span>
+            <a href="#" class="text-light text-decoration-none mx-2">
+                Contact Us
+            </a>
+            <span>•</span>
+            <a href="#" class="text-light text-decoration-none mx-2">
+                Our Addons
+            </a>
+            <span>•</span>
+            <a href="#" class="text-light text-decoration-none mx-2">
+                Tavern News
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
